@@ -2,9 +2,14 @@ body{
     background-color: hsl(47, 88%, 63%);
     font-size: 16px;
     font-family: 'Figtree', sans-serif;;
-    
+    display:grid;
+    align-content: center;
 }
 
 p.caption{
-    color: grey;
+    color: hsl(0, 0%, 50%);
+}
+
+div.img2{
+    float: left; 
 }
