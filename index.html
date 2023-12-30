@@ -2,28 +2,26 @@
 <html>
 
     <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0"> <!-- display site properly -->
         <title>blog-preview-card</title>
+        <link rel ="icon" type="image/png" sizes="32*32" href="/Users/christianmachira/Downloads/blog-preview-card-main/assets/images/favicon-32x32.png">
         <link rel ="stylesheet" href="style.css">
     </head>
+  <body>
 
-    <body style="background-color: hsl(47, 88%, 63%);">
-        <div id="box" >
-            <div id="img">
-                <img src="illustration-article.svg" alt="an image with self-closing html tags">
-            </div>
+        <!-- create a card container -->
 
-
-        <p id="learn" style="color:black;"><b>Learning</b></p>
-        <p style="color: black;">Published 21st Dec 2023</p>
-        <h2 style="color:black;">HTML & CSS foundations</h2>
-        <p id="caption">These languages are the backbone of every website, defining structure, content and presentation</p> 
-       
-
-       
-        <img src="image-avatar.webp" alt="Gregg Hooper">
-        <p style="color:black;"><b>Gregg Hooper</b></p>
-        
+      <div class="card-container">
+        <img src="illustration-article.svg" alt="article-image" class="blog-image">
+        <span class="status">Learning</span>
+        <p class="date">Published 21 Dec 2023</p>
+        <h2 class="title">HTML & CSS foundations</h2>
+        <p class="description">These languages are the backbone of every website, defining structure, content, and presentation.</p>
+        <div class="author-section">
+            <img src="image-avatar.webp" alt="author-image">
+            <span class="author-name">Greg Hooper</span>
         </div>
+      </div>
     </body>
-
 </html>

@@ -1,34 +1,92 @@
-body{
-    /* background-color: hsl(47, 88%, 63%); */
-    font-size: 16px;
-    font-family: 'Figtree', sans-serif;;
-    display:flex;
-    flex-direction: column;
-    flex-grow:0;
-    flex-shrink: 0;
-    align-items: center;
-    flex-wrap: wrap;
-    place-items: center;
-    width: 350px;
-    padding: 30px;
-    margin: auto;
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
-    justify-content: center;
-    color: hsl(0, 0%, 50%);
-    
+@font-face {
+    font-family: 'FigTree';
+    src: local('FigTree'),
+        url(./assets/fonts/static/Figtree-SemiBold.ttf);
+    font-weight: 600;
+}
+@font-face {
+    font-family: 'FigTree';
+    src: local('FigTree'),
+        url(./assets/fonts/static/Figtree-ExtraBold.ttf);
+    font-weight: 800;
 }
 
-div.img2{
-    float: left; 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-div.box{
-    display:flex;
+
+body {
+    min-height: 100vh;
+    background-color: hsl(47, 88%, 63%);
+    display: flex;
+    justify-content: center;
     align-items: center;
-    flex-direction: column;
-    flex-wrap: wrap;
-  
+    font-size: 16px;
+    font-family: 'Figtree', sans-serif;
+    color: hsl(0, 0%, 7%);
 }
-img{
-    object-fit: cover;
+
+.card-container {
+    max-width: 390px;
+    border: 2px solid hsl(0, 0%, 7%);
+    background-color: hsl(0, 0%, 100%);
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 10px 10px;
+    margin: 0 20px;
+}
+
+.blog-image {
+    max-width: 100%;
+    display: block;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.status {
+    display: inline-block;
+    font-size: 0.9em;
+    font-weight: 800;
+    padding: 5px 10px;
+    color: hsl(0, 0%, 7%);
+    background-color: hsl(47, 88%, 63%);
+    border-radius: 5px;
+}
+
+.date {
+    font-size: 0.8em;
+    margin-top: 10px;
+}
+
+.title {
+    margin: 15px 0;
+    cursor: pointer;
+}
+
+.title:hover, .title:active {
+    color:hsl(47, 88%, 63%);
+}
+
+.description {
+    color: hsl(0, 0%, 50%);
+    max-width: 336px;
+    line-height: 1.4em;
+    margin-bottom: 30px;
+}
+
+.author-section {
+    display: flex;
+    align-items: center;
+}
+
+.author-section img {
+    width: 30px;
+}
+
+.author-name {
+    margin-left: 10px;
+    font-weight: 800;
+    font-size: 0.8em;
 }
